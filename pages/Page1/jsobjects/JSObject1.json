@@ -1,0 +1,24 @@
+{
+  "unpublishedCollection": {
+    "name": "JSObject1",
+    "pageId": "Page1",
+    "pluginId": "js-plugin",
+    "pluginType": "JS",
+    "actions": [],
+    "archivedActions": [],
+    "body": "export default {\n\tmyVar1: [1,3],\n\tmyVar2: {name: \"jasof\"},\n\tmyFun1: () => {\n\t\tshowAlert(\"保存成功\")\n\t\t//write code here\n\t},\n\tmyFun2: async () => {\n\t\t//use async-await or promises\n\t}\n}",
+    "variables": [
+      {
+        "name": "myVar1",
+        "value": "[1, 3]"
+      },
+      {
+        "name": "myVar2",
+        "value": "{\n  name: \"jasof\"\n}"
+      }
+    ]
+  },
+  "id": "Page1_JSObject1",
+  "deleted": false,
+  "gitSyncId": "6391f4c807759c7a20d9e725_640888e55f03e6468976a4cf"
+}

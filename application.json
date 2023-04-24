@@ -1,0 +1,25 @@
+{
+  "pages": [
+    {
+      "id": "Page1",
+      "isDefault": true
+    }
+  ],
+  "viewMode": false,
+  "appIsExample": false,
+  "unreadCommentThreads": 0,
+  "color": "#C72EAD",
+  "icon": "shake-hands",
+  "unpublishedAppLayout": {
+    "type": "FLUID",
+    "gridMarginVisible": false
+  },
+  "publishedAppLayout": {
+    "type": "FLUID",
+    "gridMarginVisible": false
+  },
+  "evaluationVersion": 2,
+  "applicationVersion": 2,
+  "isManualUpdate": false,
+  "deleted": false
+}
