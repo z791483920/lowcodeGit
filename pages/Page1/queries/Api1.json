@@ -2,13 +2,13 @@
   "pluginType": "API",
   "pluginId": "restapi-plugin",
   "unpublishedAction": {
+    "executeType": "CLIENT",
     "name": "Api1",
     "datasource": {
       "name": "DEFAULT_REST_DATASOURCE",
       "pluginId": "restapi-plugin",
       "datasourceConfiguration": {
-        "sshProxyEnabled": false,
-        "url": "https://baidu.com"
+        "url": "http://baidu.com"
       },
       "invalids": [],
       "messages": [],
@@ -21,16 +21,7 @@
     "actionConfiguration": {
       "timeoutInMillisecond": 10000,
       "paginationType": "NONE",
-      "headers": [
-        {
-          "key": "a",
-          "value": "1"
-        },
-        {
-          "key": "b",
-          "value": "{{JSObject1.myVar1[1]}}"
-        }
-      ],
+      "headers": [],
       "encodeParamsToggle": true,
       "queryParameters": [],
       "bodyFormData": [],
@@ -45,17 +36,11 @@
       }
     },
     "executeOnLoad": true,
-    "dynamicBindingPathList": [
-      {
-        "key": "headers[1].value"
-      }
-    ],
+    "dynamicBindingPathList": [],
     "isValid": true,
     "invalids": [],
     "messages": [],
-    "jsonPathKeys": [
-      "JSObject1.myVar1[1]"
-    ],
+    "jsonPathKeys": [],
     "userSetOnLoad": false,
     "confirmBeforeExecute": false,
     "policies": [],
@@ -63,5 +48,5 @@
   },
   "id": "Page1_Api1",
   "deleted": false,
-  "gitSyncId": "6391f4c807759c7a20d9e725_64462d38a090a4626c22f710"
+  "gitSyncId": "6391f4c807759c7a20d9e725_6447510ad7819b5242e9a03e"
 }

@@ -633,7 +633,7 @@
               "resetFormOnClick": false,
               "boxShadow": "none",
               "widgetName": "Button1",
-              "onClick": "{{Api2.run()}}",
+              "onClick": "{{showModal('Modal1')}}",
               "buttonColor": "{{keyu.theme.colors.primaryColor}}",
               "displayName": "按钮",
               "iconSVG": "/static/media/icon.d1cf02de6f669533fbf52e15d5b6e591.svg",
@@ -688,30 +688,323 @@
               "buttonVariant": "PRIMARY",
               "placement": "CENTER",
               "treeIconSVG": "/static/media/icon-tree.60dce56d3700b2aac5a24c47a5feb3b1.svg"
+            },
+            {
+              "boxShadow": "none",
+              "widgetName": "Modal1",
+              "isCanvas": true,
+              "displayName": "弹窗",
+              "iconSVG": "/static/media/icon.037c8c2eaf72f84061e10d55c6bb7775.svg",
+              "searchTags": [
+                "dialog",
+                "popup",
+                "notification",
+                "modal"
+              ],
+              "topRow": 14,
+              "bottomRow": 38,
+              "parentRowSpace": 10,
+              "type": "MODAL_WIDGET",
+              "hideCard": false,
+              "shouldScrollContents": true,
+              "animateLoading": true,
+              "parentColumnSpace": 8.8125,
+              "leftColumn": 8,
+              "dynamicBindingPathList": [
+                {
+                  "key": "borderRadius"
+                }
+              ],
+              "children": [
+                {
+                  "boxShadow": "none",
+                  "widgetName": "Canvas2",
+                  "displayName": "Canvas",
+                  "topRow": 0,
+                  "bottomRow": 240,
+                  "parentRowSpace": 1,
+                  "type": "CANVAS_WIDGET",
+                  "canExtend": true,
+                  "hideCard": true,
+                  "shouldScrollContents": false,
+                  "minHeight": 240,
+                  "parentColumnSpace": 1,
+                  "leftColumn": 0,
+                  "dynamicBindingPathList": [
+                    {
+                      "key": "borderRadius"
+                    },
+                    {
+                      "key": "accentColor"
+                    }
+                  ],
+                  "children": [
+                    {
+                      "boxShadow": "none",
+                      "widgetName": "IconButton1",
+                      "onClick": "{{closeModal('Modal1')}}",
+                      "buttonColor": "{{keyu.theme.colors.primaryColor}}",
+                      "displayName": "图标按钮",
+                      "iconSVG": "/static/media/icon.bda34828864e51cc369732d3d6ab86eb.svg",
+                      "searchTags": [
+                        "click",
+                        "submit",
+                        "button",
+                        "icon button"
+                      ],
+                      "topRow": 1,
+                      "bottomRow": 5,
+                      "floatZIndex": 6,
+                      "type": "ICON_BUTTON_WIDGET",
+                      "hideCard": false,
+                      "animateLoading": true,
+                      "leftColumn": 56,
+                      "dynamicBindingPathList": [
+                        {
+                          "key": "buttonColor"
+                        },
+                        {
+                          "key": "borderRadius"
+                        }
+                      ],
+                      "iconSize": 24,
+                      "isDisabled": false,
+                      "gridConfig": {
+                        "containerGridPadding": 0,
+                        "widgetPadding": 0
+                      },
+                      "key": "028qkp5eka",
+                      "isDeprecated": false,
+                      "rightColumn": 64,
+                      "iconName": "cross",
+                      "widgetId": "cb791kj5kq",
+                      "isFloat": false,
+                      "isVisible": true,
+                      "version": 1,
+                      "parentId": "jyotgxvt1i",
+                      "renderMode": "CANVAS",
+                      "isLoading": false,
+                      "borderRadius": "{{keyu.theme.borderRadius.appBorderRadius}}",
+                      "widgetCategory": "BUTTON",
+                      "buttonVariant": "TERTIARY",
+                      "treeIconSVG": "/static/media/icon-tree.b0c86371560639ecd16086c23eb1bc83.svg"
+                    },
+                    {
+                      "widgetName": "Text3",
+                      "displayName": "文本",
+                      "iconSVG": "/static/media/icon.b4d76cb5a7f363bdb65fc6af739d9da7.svg",
+                      "searchTags": [
+                        "typography",
+                        "paragraph",
+                        "label",
+                        "text"
+                      ],
+                      "topRow": 1,
+                      "bottomRow": 5,
+                      "floatZIndex": 6,
+                      "type": "TEXT_WIDGET",
+                      "hideCard": false,
+                      "animateLoading": true,
+                      "overflow": "NONE",
+                      "fontFamily": "{{keyu.theme.fontFamily.appFont}}",
+                      "leftColumn": 1,
+                      "dynamicBindingPathList": [
+                        {
+                          "key": "fontFamily"
+                        },
+                        {
+                          "key": "borderRadius"
+                        }
+                      ],
+                      "shouldTruncate": false,
+                      "truncateButtonColor": "#FFC13D",
+                      "text": "弹窗标题",
+                      "gridConfig": {
+                        "containerGridPadding": 0,
+                        "widgetPadding": 0
+                      },
+                      "key": "3phkpp2kn9",
+                      "isDeprecated": false,
+                      "rightColumn": 41,
+                      "textAlign": "LEFT",
+                      "dynamicHeight": "FIXED",
+                      "widgetId": "mp8txascht",
+                      "isFloat": false,
+                      "isVisible": true,
+                      "fontStyle": "BOLD",
+                      "textColor": "#231F20",
+                      "version": 1,
+                      "parentId": "jyotgxvt1i",
+                      "renderMode": "CANVAS",
+                      "isLoading": false,
+                      "borderRadius": "{{keyu.theme.borderRadius.appBorderRadius}}",
+                      "maxDynamicHeight": 9000,
+                      "widgetCategory": "BASE",
+                      "fontSize": "1.5rem",
+                      "treeIconSVG": "/static/media/icon-tree.f3a5a1754c5aa9185ecb97a1cb5f6ceb.svg",
+                      "minDynamicHeight": 4
+                    },
+                    {
+                      "resetFormOnClick": false,
+                      "boxShadow": "none",
+                      "widgetName": "Button3",
+                      "onClick": "{{closeModal('Modal1')}}",
+                      "buttonColor": "{{keyu.theme.colors.primaryColor}}",
+                      "displayName": "按钮",
+                      "iconSVG": "/static/media/icon.d1cf02de6f669533fbf52e15d5b6e591.svg",
+                      "searchTags": [
+                        "click",
+                        "submit",
+                        "button"
+                      ],
+                      "topRow": 16,
+                      "bottomRow": 20,
+                      "floatZIndex": 6,
+                      "type": "BUTTON_WIDGET",
+                      "hideCard": false,
+                      "animateLoading": true,
+                      "leftColumn": 32,
+                      "dynamicBindingPathList": [
+                        {
+                          "key": "buttonColor"
+                        },
+                        {
+                          "key": "borderRadius"
+                        }
+                      ],
+                      "text": "关闭",
+                      "isDisabled": false,
+                      "gridConfig": {
+                        "containerGridPadding": 0,
+                        "widgetPadding": 0
+                      },
+                      "key": "i7oazm011c",
+                      "isDeprecated": false,
+                      "rightColumn": 48,
+                      "isDefaultClickDisabled": true,
+                      "widgetId": "y2mv6vym11",
+                      "buttonStyle": "PRIMARY",
+                      "isFloat": false,
+                      "isVisible": true,
+                      "recaptchaType": "V3",
+                      "version": 1,
+                      "parentId": "jyotgxvt1i",
+                      "renderMode": "CANVAS",
+                      "isLoading": false,
+                      "disabledWhenInvalid": false,
+                      "borderRadius": "{{keyu.theme.borderRadius.appBorderRadius}}",
+                      "widgetCategory": "BUTTON",
+                      "buttonVariant": "SECONDARY",
+                      "placement": "CENTER",
+                      "treeIconSVG": "/static/media/icon-tree.60dce56d3700b2aac5a24c47a5feb3b1.svg"
+                    },
+                    {
+                      "resetFormOnClick": false,
+                      "boxShadow": "none",
+                      "widgetName": "Button4",
+                      "buttonColor": "{{keyu.theme.colors.primaryColor}}",
+                      "displayName": "按钮",
+                      "iconSVG": "/static/media/icon.d1cf02de6f669533fbf52e15d5b6e591.svg",
+                      "searchTags": [
+                        "click",
+                        "submit",
+                        "button"
+                      ],
+                      "topRow": 16,
+                      "bottomRow": 20,
+                      "floatZIndex": 6,
+                      "type": "BUTTON_WIDGET",
+                      "hideCard": false,
+                      "animateLoading": true,
+                      "leftColumn": 48,
+                      "dynamicBindingPathList": [
+                        {
+                          "key": "buttonColor"
+                        },
+                        {
+                          "key": "borderRadius"
+                        }
+                      ],
+                      "text": "确认",
+                      "isDisabled": false,
+                      "gridConfig": {
+                        "containerGridPadding": 0,
+                        "widgetPadding": 0
+                      },
+                      "key": "i7oazm011c",
+                      "isDeprecated": false,
+                      "rightColumn": 64,
+                      "isDefaultClickDisabled": true,
+                      "widgetId": "wmg29a2htx",
+                      "buttonStyle": "PRIMARY_BUTTON",
+                      "isFloat": false,
+                      "isVisible": true,
+                      "recaptchaType": "V3",
+                      "version": 1,
+                      "parentId": "jyotgxvt1i",
+                      "renderMode": "CANVAS",
+                      "isLoading": false,
+                      "disabledWhenInvalid": false,
+                      "borderRadius": "{{keyu.theme.borderRadius.appBorderRadius}}",
+                      "widgetCategory": "BUTTON",
+                      "buttonVariant": "PRIMARY",
+                      "placement": "CENTER",
+                      "treeIconSVG": "/static/media/icon-tree.60dce56d3700b2aac5a24c47a5feb3b1.svg"
+                    }
+                  ],
+                  "isDisabled": false,
+                  "gridConfig": {
+                    "containerGridPadding": 0,
+                    "widgetPadding": 0
+                  },
+                  "key": "6mb5nasqfl",
+                  "isDeprecated": false,
+                  "rightColumn": 211.5,
+                  "detachFromLayout": true,
+                  "widgetId": "jyotgxvt1i",
+                  "accentColor": "{{keyu.theme.colors.primaryColor}}",
+                  "isVisible": true,
+                  "version": 1,
+                  "parentId": "3v0vfyuuew",
+                  "renderMode": "CANVAS",
+                  "isLoading": false,
+                  "borderRadius": "{{keyu.theme.borderRadius.appBorderRadius}}"
+                }
+              ],
+              "gridConfig": {
+                "containerGridPadding": 0,
+                "widgetPadding": 0
+              },
+              "key": "tcai3iiuli",
+              "height": 240,
+              "isDeprecated": false,
+              "rightColumn": 32,
+              "detachFromLayout": true,
+              "dynamicHeight": "FIXED",
+              "widgetId": "3v0vfyuuew",
+              "canOutsideClickClose": true,
+              "canEscapeKeyClose": true,
+              "version": 2,
+              "parentId": "0",
+              "renderMode": "CANVAS",
+              "isLoading": false,
+              "borderRadius": "{{keyu.theme.borderRadius.appBorderRadius}}",
+              "maxDynamicHeight": 9000,
+              "widgetCategory": "LAYOUT",
+              "width": 456,
+              "treeIconSVG": "/static/media/icon-tree.e840906cb1c7456066d8b9673db5ebfb.svg",
+              "minDynamicHeight": 24
             }
           ]
         },
         "layoutOnLoadActions": [
           [
             {
-              "id": "Page1_Api1",
+              "id": "null_null",
               "name": "Api1",
               "confirmBeforeExecute": false,
               "pluginType": "API",
-              "jsonPathKeys": [
-                "JSObject1.myVar1[1]"
-              ],
-              "timeoutInMillisecond": 10000
-            },
-            {
-              "id": "Page1_Api2",
-              "name": "Api2",
-              "confirmBeforeExecute": false,
-              "pluginType": "API",
-              "jsonPathKeys": [
-                "JSObject1.myVar1[0]",
-                "JSObject1.myVar2.name"
-              ],
+              "jsonPathKeys": [],
               "timeoutInMillisecond": 10000
             }
           ]
