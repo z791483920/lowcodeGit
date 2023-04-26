@@ -593,11 +593,14 @@
                 },
                 {
                   "key": "borderRadius"
+                },
+                {
+                  "key": "text"
                 }
               ],
               "shouldTruncate": false,
               "truncateButtonColor": "#FFC13D",
-              "text": "jason",
+              "text": "{{client_api.data}}",
               "gridConfig": {
                 "containerGridPadding": 0,
                 "widgetPadding": 0
@@ -683,7 +686,20 @@
             }
           ]
         },
-        "layoutOnLoadActions": [],
+        "layoutOnLoadActions": [
+          [
+            {
+              "id": "Page1_client_api",
+              "name": "client_api",
+              "confirmBeforeExecute": false,
+              "pluginType": "API",
+              "jsonPathKeys": [
+                "JSObject1.myVar1"
+              ],
+              "timeoutInMillisecond": 10000
+            }
+          ]
+        ],
         "validOnPageLoadActions": true,
         "id": "Page1",
         "deleted": false,
