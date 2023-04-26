@@ -31,13 +31,7 @@
       "encodeParamsToggle": true,
       "queryParameters": [],
       "body": "{\n\t\"fasd\": \"333\"\n}",
-      "bodyFormData": [
-        {
-          "key": "ff",
-          "value": "{{JSObject1.myVar1}}",
-          "type": "ARRAY"
-        }
-      ],
+      "bodyFormData": [],
       "httpMethod": "POST",
       "pluginSpecifiedTemplates": [
         {
@@ -53,9 +47,7 @@
     "isValid": true,
     "invalids": [],
     "messages": [],
-    "jsonPathKeys": [
-      "JSObject1.myVar1"
-    ],
+    "jsonPathKeys": [],
     "userSetOnLoad": false,
     "confirmBeforeExecute": false,
     "policies": [],
